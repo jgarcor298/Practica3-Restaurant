@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zahra Arabic Restaurant</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <div class="header-logo">
+                <img src="assets/img/zahra_logo.png" alt="Zahra Logo" class="logo-img">
+            </div>
+            <button class="hamburger" aria-label="Toggle menu">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#" class="nav-link">HOME</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">TEAM</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">MENU</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">Zahra Arabic</h1>
+                <h2 class="hero-subtitle">A celebration of tradition, <br> flavor and elegance</h2>
+                <p class="hero-text">Experience the Essence of Middle Eastern Luxury</p>
+            </div>
+        </section>
+
+        <!-- Culture Section -->
+        <section class="culture">
+            <div class="culture-container">
+                <div class="culture-image">
+                    <img src="assets/img/zahra_restaurant.png" alt="Interior of Zahra Restaurant" class="section-img">
+                </div>
+                <div class="culture-text">
+                    <h3 class="section-subtitle">Where Culture Meets Elegance</h3>
+                    <p class="section-desc">
+                        A refined fusion of traditional Arabic design and modern sophistication. Warm lighting,
+                        handcrafted accents, and intricate architectural details come together to create a serene and
+                        immersive atmosphere – the perfect setting for an unforgettable dining experience.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Chef Section -->
+        <section class="chef">
+            <div class="chef-container">
+                <div class="chef-text">
+                    <h3 class="section-subtitle">A Taste of Arabian Sophistication</h3>
+                    <h2 class="section-title">Chef's Signature <br> Recommendation</h2>
+                    <p class="section-desc">
+                        Experience the authentic flavors of the Middle East through our chef's most iconic creation. A
+                        perfect balance of tradition, spices, and refined culinary artistry.
+                    </p>
+                    <a href="#" class="btn btn-outline">Discover Our Menus</a>
+                </div>
+                <div class="chef-image">
+                    <img src="assets/img/zahra_hero_hummus.png" alt="Chef's Signature Dish"
+                        class="section-img rounded-img">
+                </div>
+            </div>
+        </section>
+
+        <!-- Story Section -->
+        <section class="story">
+            <div class="story-container">
+                <div class="story-image">
+                    <img src="assets/img/zahra_kitchen_team.png" alt="Chef Plating Food" class="section-img">
+                </div>
+                <div class="story-text">
+                    <h3 class="section-subtitle">Behind the Tradition</h3>
+                    <h2 class="section-title">Our Story</h2>
+                    <p class="section-desc">
+                        Zahra was born from a passion for preserving the rich culinary heritage of the Middle East.
+                        Inspired by family recipes and centuries of tradition, we blend authentic flavors with refined
+                        modern techniques to create a unique dining experience. Every detail, from our ingredients to
+                        our ambience, reflects our dedication to excellence.
+                    </p>
+                    <a href="#" class="btn btn-outline">Meet our team</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reservation Section -->
+        <section class="reservation">
+            <div class="reservation-content">
+                <h3 class="section-subtitle">Your Table Awaits</h3>
+                <h2 class="section-title">Make an Online <br> Reservation</h2>
+                <p class="section-desc">
+                    Secure your place at Zahra and enjoy a refined journey through the flavors of the Middle East. A
+                    memorable dining experience begins with a simple click.
+                </p>
+                <a href="#" class="btn btn-outline">Reserve Now</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="assets/img/zahra_logo.png" alt="Zahra Logo" class="logo-img-small">
+            </div>
+            <div class="footer-nav">
+                <ul class="footer-list">
+                    <li class="footer-item"><a href="#" class="footer-link">HOME</a></li>
+                    <li class="footer-item"><a href="#" class="footer-link">TEAM</a></li>
+                    <li class="footer-item"><a href="#" class="footer-link">MENUS</a></li>
+                    <li class="footer-item"><a href="#" class="footer-link">CONTACT</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <a href="#" class="social-link"><img src="assets/icons/instagram.svg" alt="Instagram"
+                        class="social-icon"></a>
+                <a href="#" class="social-link"><img src="assets/icons/facebook.svg" alt="Facebook"
+                        class="social-icon"></a>
+                <a href="#" class="social-link"><img src="assets/icons/x.svg" alt="X" class="social-icon"></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const nav = document.querySelector('.nav');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            nav.classList.toggle('active');
+        });
+
+        // Close menu when clicking on a link
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                nav.classList.remove('active');
+            });
+        });
+    </script>
+
+</body>
+
+</html>
