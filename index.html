@@ -10,7 +10,6 @@
 
 <body>
 
-    <!-- Header -->
     <header class="header">
         <div class="header-container">
             <div class="header-logo">
@@ -24,16 +23,15 @@
             <nav class="nav">
                 <ul class="nav-list">
                     <li class="nav-item"><a href="#" class="nav-link">HOME</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">TEAM</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">MENU</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">CONTACT</a></li>
+                    <li class="nav-item"><a href="teams.html" class="nav-link">TEAM</a></li>
+                    <li class="nav-item"><a href="menu.html" class="nav-link">MENU</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">CONTACT</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <main>
-        <!-- Hero Section -->
         <section class="hero">
             <div class="hero-content">
                 <h1 class="hero-title">Zahra Arabic</h1>
@@ -42,7 +40,6 @@
             </div>
         </section>
 
-        <!-- Culture Section -->
         <section class="culture">
             <div class="culture-container">
                 <div class="culture-image">
@@ -59,7 +56,6 @@
             </div>
         </section>
 
-        <!-- Chef Section -->
         <section class="chef">
             <div class="chef-container">
                 <div class="chef-text">
@@ -78,11 +74,10 @@
             </div>
         </section>
 
-        <!-- Story Section -->
         <section class="story">
             <div class="story-container">
                 <div class="story-image">
-                    <img src="assets/img/zahra_kitchen_team.png" alt="Chef Plating Food" class="section-img">
+                    <img src="assets/img/zahra_home_aboutus.jpg" alt="Chef Plating Food" class="section-img">
                 </div>
                 <div class="story-text">
                     <h3 class="section-subtitle">Behind the Tradition</h3>
@@ -98,7 +93,6 @@
             </div>
         </section>
 
-        <!-- Reservation Section -->
         <section class="reservation">
             <div class="reservation-content">
                 <h3 class="section-subtitle">Your Table Awaits</h3>
@@ -112,7 +106,6 @@
         </section>
     </main>
 
-    <!-- Footer -->
     <footer class="footer">
         <div class="footer-container">
             <div class="footer-logo">
@@ -121,9 +114,9 @@
             <div class="footer-nav">
                 <ul class="footer-list">
                     <li class="footer-item"><a href="#" class="footer-link">HOME</a></li>
-                    <li class="footer-item"><a href="#" class="footer-link">TEAM</a></li>
-                    <li class="footer-item"><a href="#" class="footer-link">MENUS</a></li>
-                    <li class="footer-item"><a href="#" class="footer-link">CONTACT</a></li>
+                    <li class="footer-item"><a href="teams.html" class="footer-link">TEAM</a></li>
+                    <li class="footer-item"><a href="menu.html" class="footer-link">MENUS</a></li>
+                    <li class="footer-item"><a href="contact.html" class="footer-link">CONTACT</a></li>
                 </ul>
             </div>
             <div class="footer-social">
@@ -145,7 +138,6 @@
             nav.classList.toggle('active');
         });
 
-        // Close menu when clicking on a link
         document.querySelectorAll('.nav-link').forEach(link => {
             link.addEventListener('click', () => {
                 hamburger.classList.remove('active');

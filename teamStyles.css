@@ -22,6 +22,7 @@
     --smerald-green: #0F8F7A;
     --light: #f0f0f0;
     --muted: #a0a0a0;
+    --card-bg: #1C2A3D;
 }
 
 * {
@@ -158,17 +159,18 @@ img {
     }
 }
 
-.hero {
-    height: 95vh;
-    background-image: url('assets/img/zahra_hero.png');
+.team-hero {
+    height: 50vh;
+    min-height: 400px;
+    background-image: url('assets/img/zahra_banner_header.png');
     background-size: cover;
-    background-position: center bottom;
+    background-position: center;
     background-repeat: no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
     position: relative;
+    margin-bottom: 4rem;
 
     &::before {
         content: '';
@@ -180,257 +182,174 @@ img {
         background: rgba(0, 0, 0, 0.4);
     }
 
-    .hero-content {
+    .team-hero-content {
         position: relative;
         z-index: 1;
-        max-width: 800px;
-        padding: 2rem;
+        text-align: center;
     }
 
-    .hero-title {
+    .team-hero-title {
         font-family: 'Playfair Display';
         font-size: 4rem;
-        color: var(--gold);
-        margin-bottom: 1.5rem;
+        color: var(--light);
+        text-transform: uppercase;
+        letter-spacing: 5px;
+    }
+}
+
+.team-intro {
+    padding: 0 2rem 4rem;
+    text-align: center;
+
+    .team-intro-container {
+        max-width: 800px;
+        margin: 0 auto;
     }
 
-    .hero-subtitle {
+    .team-intro-title {
         font-family: 'Playfair Display';
         font-size: 2.5rem;
         color: var(--light);
         margin-bottom: 1.5rem;
-        line-height: 1.2;
     }
 
-    .hero-text {
-        font-size: 1.2rem;
+    .team-intro-text {
+        font-size: 1rem;
         color: var(--light);
-        letter-spacing: 1px;
+        line-height: 1.8;
     }
 
-    @media (max-width: 768px) {
-        .hero-title {
-            font-size: 2.5rem;
-        }
-
-        .hero-subtitle {
-            font-size: 1.5rem;
-        }
+    .text-gold {
+        color: var(--gold);
     }
 }
 
-.section-subtitle {
-    font-family: 'Noah';
-    color: var(--smerald-green);
-    font-size: 1rem;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    margin-bottom: 1rem;
-}
+.team-section {
+    padding: 2rem 2rem 4rem;
+    max-width: 1200px;
+    margin: 0 auto;
 
-.section-title {
-    font-family: 'Playfair Display';
-    font-size: 3rem;
-    color: var(--gold);
-    margin-bottom: 2.5rem;
-    line-height: 1.2;
-}
-
-.section-desc {
-    font-size: 1rem;
-    color: var(--light);
-    margin-bottom: 2.5rem;
-    max-width: 500px;
-}
-
-.btn {
-    display: inline-block;
-    padding: 10px 30px;
-    border-top: 1px solid var(--gold);
-    border-bottom: 1px solid var(--gold);
-    color: var(--light);
-    font-family: 'Playfair Display';
-    text-transform: uppercase;
-    letter-spacing: 1px;
-
-    &:hover {
-        background-color: var(--gold);
-        color: var(--color-bg);
+    .team-section-title {
+        font-family: 'Noah';
+        color: var(--smerald-green);
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        text-align: center;
+        margin-bottom: 3rem;
+        font-weight: 700;
     }
-}
 
-.culture {
-    padding: 8rem 6rem;
-    background-color: var(--color-bg);
-
-    .culture-container {
+    .team-flex-container {
         display: flex;
-        align-items: center;
+        flex-wrap: wrap;
+        gap: 2rem;
         justify-content: center;
-        gap: 6rem;
-        max-width: 100%;
-        
     }
 
-    .culture-image {
-        flex: 1;
-        max-width: 400px;
-    }
-
-    .culture-text {
-        flex: 1;
-
-        .section-subtitle {
-            color: var(--smerald-green);
-        }
+    .team-card {
+        flex: 1 1 45%;
+        min-width: 300px;
     }
 
     @media (max-width: 768px) {
-        padding: 4rem 2rem;
-
-        .culture-container {
+        .team-flex-container {
             flex-direction: column;
-            text-align: center;
-            gap: 3rem;
         }
 
-        .culture-image {
-            order: -1;
-            max-width: 90%;
+        .team-card {
+            flex: 1 1 100%;
         }
     }
 }
 
-.chef {
-    padding: 4rem 20rem;
+.team-card {
+    background-color: var(--card-bg);
+    padding: 2rem;
+    text-align: left;
+    border-radius: 4px;
 
-    .chef-container {
-        display: flex;
-        align-items: center;
-    }
+    .team-card-image {
+        margin-bottom: 1.5rem;
 
-    .chef-text {
-        flex: 1;
-
-        .section-subtitle {
-            color: var(--smerald-green);
-        }
-    }
-
-    .chef-image {
-        flex: 1;
-        display: flex;
-        justify-content: center;
-
-        .rounded-img {
-            border-radius: 50%;
-            width: 400px;
-            height: 400px;
+        img {
+            width: 100%;
+            height: auto;
             object-fit: cover;
+            aspect-ratio: 1 / 1;
         }
     }
 
-    @media (max-width: 768px) {
-        padding: 4rem 2rem;
-
-        .chef-container {
-            flex-direction: column;
-            text-align: center;
-            gap: 3rem;
+    .team-card-content {
+        .team-member-name {
+            font-family: 'Noah';
+            font-size: 1.1rem;
+            color: var(--gold);
+            margin-bottom: 0.5rem;
+            font-weight: 700;
         }
 
-        .chef-image {
-            order: -1;
+        .team-member-role {
+            font-family: 'Noah';
+            font-size: 0.9rem;
+            color: var(--smerald-green);
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+        }
 
-            .rounded-img {
-                width: 300px;
-                height: 300px;
+        .team-member-desc {
+            font-size: 0.9rem;
+            color: var(--light);
+            line-height: 1.6;
+        }
+    }
+}
+
+.team-kitchen-section {
+    background-color: var(--card-bg);
+    padding: 0;
+    background-color: transparent;
+
+    .team-kitchen-container {
+        background-color: var(--card-bg);
+        padding: 0;
+
+        .team-kitchen-image {
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        .team-kitchen-content {
+            padding: 2rem;
+            text-align: center;
+
+            .team-member-name {
+                font-family: 'Noah';
+                font-size: 1.2rem;
+                color: var(--gold);
+                margin-bottom: 1rem;
+            }
+
+            .team-member-desc {
+                max-width: 600px;
+                margin: 0 auto;
+                font-size: 0.9rem;
             }
         }
     }
 }
 
-.story {
-    padding: 4rem 6rem;
-    background-color: var(--color-bg);
-
-    .story-container {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 6rem;
-        max-width: 1200px;
-        margin: 0 auto;
-    }
-
-    .story-image {
-        flex: 1;
-        max-width: 400px;
-    }
-
-    .story-text {
-        flex: 1;
-
-        .section-subtitle {
-            color: var(--smerald-green);
-        }
-    }
-
-    @media (max-width: 768px) {
-        padding: 4rem 2rem;
-
-        .story-container {
-            flex-direction: column;
-            text-align: center;
-            gap: 3rem;
-        }
-
-        .story-image {
-            order: -1;
-            max-width: 80%;
-        }
-    }
-}
-
-.reservation {
-    padding: 8rem 6rem;
-    background: url('assets/img/zahra_banner_reservation.jpg') no-repeat center center/cover;
-    position: relative;
+.team-footer-quote {
     text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    &::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(0, 0, 0, 0.5);
-    }
-
-    .reservation-content {
-        position: relative;
-        z-index: 1;
-        max-width: 600px;
-        margin-right: 4rem;
-
-        .section-subtitle {
-            color: #4db6ac;
-        }
-    }
-
-    @media (max-width: 768px) {
-        padding: 4rem 2rem;
-        justify-content: center;
-
-        .reservation-content {
-            margin-right: 0;
-            text-align: center;
-        }
-    }
+    padding: 4rem 2rem;
+    font-family: 'Playfair Display';
+    font-size: 1.2rem;
+    color: var(--gold);
+    font-style: italic;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 .footer {
@@ -446,7 +365,7 @@ img {
     }
 
     .logo-img-small {
-        height: 100px;
+        height: 80px;
     }
 
     .footer-nav {

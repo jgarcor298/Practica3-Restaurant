@@ -22,6 +22,8 @@
     --smerald-green: #0F8F7A;
     --light: #f0f0f0;
     --muted: #a0a0a0;
+    --card-bg: #1C2A3D;
+    --divider-color: #C6A667;
 }
 
 * {
@@ -158,17 +160,18 @@ img {
     }
 }
 
-.hero {
-    height: 95vh;
-    background-image: url('assets/img/zahra_hero.png');
+.menu-hero {
+    height: 50vh;
+    min-height: 400px;
+    background-image: url('assets/img/zahra_banner_header.png');
     background-size: cover;
-    background-position: center bottom;
+    background-position: center;
     background-repeat: no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
     position: relative;
+    margin-bottom: 4rem;
 
     &::before {
         content: '';
@@ -180,219 +183,204 @@ img {
         background: rgba(0, 0, 0, 0.4);
     }
 
-    .hero-content {
+    .menu-hero-content {
         position: relative;
         z-index: 1;
-        max-width: 800px;
-        padding: 2rem;
+        text-align: center;
     }
 
-    .hero-title {
+    .menu-hero-title {
         font-family: 'Playfair Display';
         font-size: 4rem;
-        color: var(--gold);
-        margin-bottom: 1.5rem;
-    }
-
-    .hero-subtitle {
-        font-family: 'Playfair Display';
-        font-size: 2.5rem;
         color: var(--light);
-        margin-bottom: 1.5rem;
-        line-height: 1.2;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+    }
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+
+    .menu-section-title {
+        font-family: 'Playfair Display';
+        font-size: 3rem;
+        color: var(--gold);
     }
 
-    .hero-text {
+    .decoration-line {
+        width: 200px;
+        height: auto;
+    }
+
+    .decoration-star {
+        width: 40px;
+        height: auto;
+    }
+}
+
+.tasting-menus {
+    padding: 2rem 6rem 6rem;
+    max-width: 1400px;
+    margin: 0 auto;
+
+    .tasting-flex-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 4rem;
+        justify-content: center;
+    }
+
+    .tasting-card {
+        background-color: var(--card-bg);
+        padding: 3rem;
+        border: 1px solid rgba(198, 166, 103, 0.1);
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        flex: 1 1 40%;
+        min-width: 350px;
+    }
+
+    .tasting-title {
+        font-family: 'Playfair Display';
+        font-size: 2rem;
+        color: var(--smerald-green);
+        text-align: center;
+        margin-bottom: 2rem;
+        border-bottom: 1px solid var(--gold);
+        padding-bottom: 1rem;
+    }
+
+    .tasting-list {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        flex-grow: 1;
+    }
+
+    .tasting-item {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .dish-name {
+        font-family: 'Noah';
+        font-weight: 700;
+        color: var(--gold);
+        font-size: 1.1rem;
+        margin-bottom: 0.2rem;
+    }
+
+    .dish-desc {
+        font-size: 0.9rem;
+        color: var(--light);
+        opacity: 0.9;
+    }
+
+    .tasting-price {
+        margin-top: 2rem;
+        text-align: center;
+        font-family: 'Playfair Display';
         font-size: 1.2rem;
         color: var(--light);
-        letter-spacing: 1px;
+        font-style: italic;
     }
 
-    @media (max-width: 768px) {
-        .hero-title {
-            font-size: 2.5rem;
-        }
+    @media (max-width: 900px) {
+        padding: 2rem;
 
-        .hero-subtitle {
-            font-size: 1.5rem;
-        }
-    }
-}
-
-.section-subtitle {
-    font-family: 'Noah';
-    color: var(--smerald-green);
-    font-size: 1rem;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    margin-bottom: 1rem;
-}
-
-.section-title {
-    font-family: 'Playfair Display';
-    font-size: 3rem;
-    color: var(--gold);
-    margin-bottom: 2.5rem;
-    line-height: 1.2;
-}
-
-.section-desc {
-    font-size: 1rem;
-    color: var(--light);
-    margin-bottom: 2.5rem;
-    max-width: 500px;
-}
-
-.btn {
-    display: inline-block;
-    padding: 10px 30px;
-    border-top: 1px solid var(--gold);
-    border-bottom: 1px solid var(--gold);
-    color: var(--light);
-    font-family: 'Playfair Display';
-    text-transform: uppercase;
-    letter-spacing: 1px;
-
-    &:hover {
-        background-color: var(--gold);
-        color: var(--color-bg);
-    }
-}
-
-.culture {
-    padding: 8rem 6rem;
-    background-color: var(--color-bg);
-
-    .culture-container {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 6rem;
-        max-width: 100%;
-        
-    }
-
-    .culture-image {
-        flex: 1;
-        max-width: 400px;
-    }
-
-    .culture-text {
-        flex: 1;
-
-        .section-subtitle {
-            color: var(--smerald-green);
-        }
-    }
-
-    @media (max-width: 768px) {
-        padding: 4rem 2rem;
-
-        .culture-container {
+        .tasting-flex-container {
             flex-direction: column;
-            text-align: center;
-            gap: 3rem;
         }
 
-        .culture-image {
-            order: -1;
-            max-width: 90%;
+        .tasting-card {
+            flex: 1 1 100%;
         }
     }
 }
 
-.chef {
-    padding: 4rem 20rem;
+.signature-dishes {
+    padding: 4rem 6rem;
+    max-width: 1200px;
+    margin: 0 auto;
 
-    .chef-container {
+    .dish-row {
         display: flex;
         align-items: center;
-    }
+        gap: 4rem;
+        margin: 2rem 0;
 
-    .chef-text {
-        flex: 1;
-
-        .section-subtitle {
-            color: var(--smerald-green);
+        &.reverse {
+            flex-direction: row-reverse;
         }
     }
 
-    .chef-image {
+    .dish-image {
         flex: 1;
-        display: flex;
-        justify-content: center;
 
-        .rounded-img {
-            border-radius: 50%;
-            width: 400px;
-            height: 400px;
+        img {
+            width: 100%;
+            height: 300px;
             object-fit: cover;
+            border-radius: 4px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
         }
     }
 
-    @media (max-width: 768px) {
-        padding: 4rem 2rem;
+    .dish-content {
+        flex: 1;
+        padding: 2rem;
 
-        .chef-container {
-            flex-direction: column;
-            text-align: center;
-            gap: 3rem;
+        .dish-title {
+            font-family: 'Playfair Display';
+            font-size: 2rem;
+            color: var(--gold);
+            margin-bottom: 1rem;
         }
 
-        .chef-image {
-            order: -1;
+        .dish-description {
+            font-size: 1.1rem;
+            color: var(--light);
+            line-height: 1.8;
+        }
+    }
 
-            .rounded-img {
-                width: 300px;
-                height: 300px;
+    .divider-container {
+        display: flex;
+        justify-content: center;
+        margin: 3rem 0;
+    }
+
+    .section-divider {
+        width: 150px;
+        opacity: 0.7;
+    }
+
+    @media (max-width: 900px) {
+        padding: 2rem;
+
+        .dish-row {
+            flex-direction: column;
+            text-align: center;
+            gap: 2rem;
+
+            &.reverse {
+                flex-direction: column;
             }
         }
-    }
-}
 
-.story {
-    padding: 4rem 6rem;
-    background-color: var(--color-bg);
-
-    .story-container {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 6rem;
-        max-width: 1200px;
-        margin: 0 auto;
-    }
-
-    .story-image {
-        flex: 1;
-        max-width: 400px;
-    }
-
-    .story-text {
-        flex: 1;
-
-        .section-subtitle {
-            color: var(--smerald-green);
-        }
-    }
-
-    @media (max-width: 768px) {
-        padding: 4rem 2rem;
-
-        .story-container {
-            flex-direction: column;
-            text-align: center;
-            gap: 3rem;
-        }
-
-        .story-image {
-            order: -1;
-            max-width: 80%;
+        .dish-content {
+            padding: 0;
         }
     }
 }
 
-.reservation {
+.menu-reservation {
     padding: 8rem 6rem;
     background: url('assets/img/zahra_banner_reservation.jpg') no-repeat center center/cover;
     position: relative;
@@ -400,6 +388,7 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 4rem 0;
 
     &::before {
         content: '';
@@ -408,27 +397,131 @@ img {
         left: 0;
         width: 100%;
         height: 100%;
-        background: rgba(0, 0, 0, 0.5);
+        background: rgba(0, 0, 0, 0.6);
     }
 
-    .reservation-content {
+    .menu-reservation-content {
         position: relative;
         z-index: 1;
-        max-width: 600px;
-        margin-right: 4rem;
+        max-width: 700px;
+    }
 
-        .section-subtitle {
-            color: #4db6ac;
+    .reservation-subtitle {
+        font-family: 'Noah';
+        color: var(--smerald-green);
+        font-size: 1rem;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin-bottom: 1rem;
+    }
+
+    .reservation-title {
+        font-family: 'Playfair Display';
+        font-size: 3rem;
+        color: var(--gold);
+        margin-bottom: 1.5rem;
+        line-height: 1.2;
+    }
+
+    .reservation-text {
+        font-size: 1.1rem;
+        color: var(--light);
+        margin-bottom: 2.5rem;
+    }
+
+    .btn-menu {
+        display: inline-block;
+        padding: 12px 35px;
+        border: 1px solid var(--gold);
+        color: var(--light);
+        font-family: 'Playfair Display';
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        background: transparent;
+
+        &:hover {
+            background-color: var(--gold);
+            color: var(--color-bg);
         }
     }
 
     @media (max-width: 768px) {
         padding: 4rem 2rem;
-        justify-content: center;
 
-        .reservation-content {
-            margin-right: 0;
-            text-align: center;
+        .reservation-title {
+            font-size: 2.5rem;
+        }
+    }
+}
+
+.tea-menu {
+    padding: 4rem 6rem 8rem;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    .tea-flex-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+        justify-content: center;
+    }
+
+    .tea-card {
+        background-color: var(--card-bg);
+        padding: 1.5rem;
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+        border-radius: 4px;
+        transition: transform 0.3s ease;
+        flex: 1 1 45%;
+        min-width: 350px;
+
+        &:hover {
+            transform: translateY(-5px);
+        }
+    }
+
+    .tea-image {
+        width: 100px;
+        height: 100px;
+        flex-shrink: 0;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 2px solid var(--gold);
+        }
+    }
+
+    .tea-info {
+        flex: 1;
+
+        .tea-name {
+            font-family: 'Playfair Display';
+            font-size: 1.2rem;
+            color: var(--gold);
+            margin-bottom: 0.5rem;
+        }
+
+        .tea-desc {
+            font-size: 0.9rem;
+            color: var(--light);
+            line-height: 1.5;
+        }
+    }
+
+    @media (max-width: 900px) {
+        padding: 2rem 2rem 4rem;
+
+        .tea-flex-container {
+            flex-direction: column;
+        }
+
+        .tea-card {
+            flex: 1 1 100%;
         }
     }
 }
@@ -446,7 +539,7 @@ img {
     }
 
     .logo-img-small {
-        height: 100px;
+        height: 80px;
     }
 
     .footer-nav {
