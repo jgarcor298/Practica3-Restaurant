@@ -306,18 +306,26 @@ img {
 }
 
 .team-kitchen-section {
-    background-color: var(--card-bg);
-    padding: 0;
     background-color: transparent;
+    padding: 0;
 
     .team-kitchen-container {
         background-color: var(--card-bg);
-        padding: 0;
+        padding: 2rem;
+        border-radius: 4px;
+        max-width: 900px;
+        margin: 0 auto;
 
         .team-kitchen-image {
+            margin-bottom: 1.5rem;
+            text-align: center;
+
             img {
                 width: 100%;
+                max-width: 700px;
+                margin: 0 auto;
                 height: auto;
+                border-radius: 4px;
             }
         }
 

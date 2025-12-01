@@ -185,27 +185,28 @@ img {
         z-index: 1;
         max-width: 800px;
         padding: 2rem;
-    }
 
-    .hero-title {
-        font-family: 'Playfair Display';
-        font-size: 4rem;
-        color: var(--gold);
-        margin-bottom: 1.5rem;
-    }
 
-    .hero-subtitle {
-        font-family: 'Playfair Display';
-        font-size: 2.5rem;
-        color: var(--light);
-        margin-bottom: 1.5rem;
-        line-height: 1.2;
-    }
+        .hero-title {
+            font-family: 'Playfair Display';
+            font-size: 4rem;
+            color: var(--gold);
+            margin-bottom: 1.5rem;
+        }
 
-    .hero-text {
-        font-size: 1.2rem;
-        color: var(--light);
-        letter-spacing: 1px;
+        .hero-subtitle {
+            font-family: 'Playfair Display';
+            font-size: 2.5rem;
+            color: var(--light);
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+        }
+
+        .hero-text {
+            font-size: 1.2rem;
+            color: var(--light);
+            letter-spacing: 1px;
+        }
     }
 
     @media (max-width: 768px) {
@@ -255,12 +256,12 @@ img {
 
     &:hover {
         background-color: var(--gold);
-        color: var(--color-bg);
+        color: var(--light);
     }
 }
 
 .culture {
-    padding: 8rem 6rem;
+    padding: 8rem 20rem;
     background-color: var(--color-bg);
 
     .culture-container {
@@ -269,19 +270,20 @@ img {
         justify-content: center;
         gap: 6rem;
         max-width: 100%;
-        
-    }
 
-    .culture-image {
-        flex: 1;
-        max-width: 400px;
-    }
 
-    .culture-text {
-        flex: 1;
 
-        .section-subtitle {
-            color: var(--smerald-green);
+        .culture-image {
+            flex: 1;
+            max-width: 400px;
+        }
+
+        .culture-text {
+            flex: 1;
+
+            .section-subtitle {
+                color: var(--smerald-green);
+            }
         }
     }
 
@@ -351,7 +353,7 @@ img {
 }
 
 .story {
-    padding: 4rem 6rem;
+    padding: 4rem 20rem;
     background-color: var(--color-bg);
 
     .story-container {
