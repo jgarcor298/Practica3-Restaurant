@@ -524,9 +524,9 @@ img {
     }
 }
 
-/* =========================================
+/* -----------------------------------------
    TEAM STYLES
-   ========================================= */
+   ----------------------------------------- */
 
 .team-hero {
     height: 50vh;
@@ -835,62 +835,62 @@ img {
         flex-wrap: wrap;
         gap: 4rem;
         justify-content: center;
-    }
 
-    .tasting-card {
-        background-color: var(--card-bg);
-        padding: 3rem;
-        border: 1px solid rgba(198, 166, 103, 0.1);
-        display: flex;
-        flex-direction: column;
-        height: 100%;
-        flex: 1 1 40%;
-        min-width: 350px;
-    }
+        .tasting-card {
+            background-color: var(--card-bg);
+            padding: 3rem;
+            border: 1px solid rgba(198, 166, 103, 0.1);
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            flex: 1 1 40%;
+            min-width: 350px;
 
-    .tasting-title {
-        font-family: 'Playfair Display';
-        font-size: 2rem;
-        color: var(--smerald-green);
-        text-align: center;
-        margin-bottom: 2rem;
-        border-bottom: 1px solid var(--gold);
-        padding-bottom: 1rem;
-    }
+            .tasting-title {
+                font-family: 'Playfair Display';
+                font-size: 2rem;
+                color: var(--smerald-green);
+                text-align: center;
+                margin-bottom: 2rem;
+                border-bottom: 1px solid var(--gold);
+                padding-bottom: 1rem;
+            }
 
-    .tasting-list {
-        display: flex;
-        flex-direction: column;
-        gap: 1.5rem;
-        flex-grow: 1;
-    }
+            .tasting-list {
+                display: flex;
+                flex-direction: column;
+                gap: 1.5rem;
+                flex-grow: 1;
 
-    .tasting-item {
-        display: flex;
-        flex-direction: column;
-    }
+                .tasting-item {
+                    display: flex;
+                    flex-direction: column;
 
-    .dish-name {
-        font-family: 'Noah';
-        font-weight: 700;
-        color: var(--gold);
-        font-size: 1.1rem;
-        margin-bottom: 0.2rem;
-    }
+                    .dish-name {
+                        font-family: 'Noah';
+                        font-weight: 700;
+                        color: var(--gold);
+                        font-size: 1.1rem;
+                        margin-bottom: 0.2rem;
+                    }
 
-    .dish-desc {
-        font-size: 0.9rem;
-        color: var(--light);
-        opacity: 0.9;
-    }
+                    .dish-desc {
+                        font-size: 0.9rem;
+                        color: var(--light);
+                        opacity: 0.9;
+                    }
+                }
+            }
 
-    .tasting-price {
-        margin-top: 2rem;
-        text-align: center;
-        font-family: 'Playfair Display';
-        font-size: 1.2rem;
-        color: var(--light);
-        font-style: italic;
+            .tasting-price {
+                margin-top: 2rem;
+                text-align: center;
+                font-family: 'Playfair Display';
+                font-size: 1.2rem;
+                color: var(--light);
+                font-style: italic;
+            }
+        }
     }
 
     @media (max-width: 900px) {
@@ -898,10 +898,10 @@ img {
 
         .tasting-flex-container {
             flex-direction: column;
-        }
 
-        .tasting-card {
-            flex: 1 1 100%;
+            .tasting-card {
+                flex: 1 1 100%;
+            }
         }
     }
 }
@@ -920,35 +920,35 @@ img {
         &.reverse {
             flex-direction: row-reverse;
         }
-    }
 
-    .dish-image {
-        flex: 1;
+        .dish-image {
+            flex: 1;
 
-        img {
-            width: 100%;
-            height: 300px;
-            object-fit: cover;
-            border-radius: 4px;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-        }
-    }
-
-    .dish-content {
-        flex: 1;
-        padding: 2rem;
-
-        .dish-title {
-            font-family: 'Playfair Display';
-            font-size: 2rem;
-            color: var(--gold);
-            margin-bottom: 1rem;
+            img {
+                width: 100%;
+                height: 300px;
+                object-fit: cover;
+                border-radius: 4px;
+                box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+            }
         }
 
-        .dish-description {
-            font-size: 1.1rem;
-            color: var(--light);
-            line-height: 1.8;
+        .dish-content {
+            flex: 1;
+            padding: 2rem;
+
+            .dish-title {
+                font-family: 'Playfair Display';
+                font-size: 2rem;
+                color: var(--gold);
+                margin-bottom: 1rem;
+            }
+
+            .dish-description {
+                font-size: 1.1rem;
+                color: var(--light);
+                line-height: 1.8;
+            }
         }
     }
 
@@ -975,10 +975,10 @@ img {
             &.reverse {
                 flex-direction: column;
             }
-        }
 
-        .dish-content {
-            padding: 0;
+            .dish-content {
+                padding: 0;
+            }
         }
     }
 }
@@ -1054,52 +1054,52 @@ img {
         flex-wrap: wrap;
         gap: 2rem;
         justify-content: center;
-    }
 
-    .tea-card {
-        background-color: var(--card-bg);
-        padding: 1.5rem;
-        display: flex;
-        align-items: center;
-        gap: 1.5rem;
-        border-radius: 4px;
-        transition: transform 0.3s ease;
-        flex: 1 1 45%;
-        min-width: 350px;
+        .tea-card {
+            background-color: var(--card-bg);
+            padding: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            border-radius: 4px;
+            transition: transform 0.3s ease;
+            flex: 1 1 45%;
+            min-width: 350px;
 
-        &:hover {
-            transform: translateY(-5px);
-        }
-    }
+            &:hover {
+                transform: translateY(-5px);
+            }
 
-    .tea-image {
-        width: 100px;
-        height: 100px;
-        flex-shrink: 0;
+            .tea-image {
+                width: 100px;
+                height: 100px;
+                flex-shrink: 0;
 
-        img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            border-radius: 50%;
-            border: 2px solid var(--gold);
-        }
-    }
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    border-radius: 50%;
+                    border: 2px solid var(--gold);
+                }
+            }
 
-    .tea-info {
-        flex: 1;
+            .tea-info {
+                flex: 1;
 
-        .tea-name {
-            font-family: 'Playfair Display';
-            font-size: 1.2rem;
-            color: var(--gold);
-            margin-bottom: 0.5rem;
-        }
+                .tea-name {
+                    font-family: 'Playfair Display';
+                    font-size: 1.2rem;
+                    color: var(--gold);
+                    margin-bottom: 0.5rem;
+                }
 
-        .tea-desc {
-            font-size: 0.9rem;
-            color: var(--light);
-            line-height: 1.5;
+                .tea-desc {
+                    font-size: 0.9rem;
+                    color: var(--light);
+                    line-height: 1.5;
+                }
+            }
         }
     }
 
@@ -1108,17 +1108,18 @@ img {
 
         .tea-flex-container {
             flex-direction: column;
-        }
 
-        .tea-card {
-            flex: 1 1 100%;
+            .tea-card {
+                flex: 1 1 100%;
+            }
         }
     }
 }
 
-/* =========================================
+/* -----------------------------------------
    CONTACT STYLES
-   ========================================= */
+   ----------------------------------------- */
+
 
 .contact-hero {
     height: 50vh;
@@ -1212,54 +1213,59 @@ img {
         flex-wrap: wrap;
         gap: 2rem;
         justify-content: center;
-    }
 
-    .info-card {
-        background-color: var(--card-bg-contact);
-        padding: 3rem 2rem;
-        text-align: center;
-        flex: 1 1 300px;
-        max-width: 400px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-    }
+        .info-card {
+            background-color: var(--card-bg-contact);
+            padding: 3rem 2rem;
+            text-align: center;
+            flex: 1 1 300px;
+            max-width: 400px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 
-    .icon-wrapper {
-        width: 60px;
-        height: 60px;
-        border: 1px solid var(--gold);
-        border-radius: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 1.5rem;
-        padding: 12px;
-    }
+            .icon-wrapper {
+                width: 80px;
+                height: 80px;
+                border: 1px solid var(--gold);
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 1.5rem;
+                padding: 12px;
 
-    .info-icon {
-        width: 100%;
-        height: 100%;
-        filter: invert(83%) sepia(23%) saturate(666%) hue-rotate(359deg) brightness(89%) contrast(89%);
-    }
+                .clock {
+                    width: 90px;
+                    height: 90px;
+                }
+            }
 
-    .info-card-title {
-        font-family: 'Playfair Display';
-        font-size: 1.5rem;
-        color: var(--gold);
-        margin-bottom: 1.5rem;
-    }
+            .info-icon {
+                width: 100%;
+                height: 100%;
+                filter: invert(83%) sepia(23%) saturate(666%) hue-rotate(359deg) brightness(89%) contrast(89%);
+            }
 
-    .info-card-content {
-        font-size: 0.95rem;
-        color: var(--light);
-        line-height: 1.8;
+            .info-card-title {
+                font-family: 'Playfair Display';
+                font-size: 1.5rem;
+                color: var(--gold);
+                margin-bottom: 1.5rem;
+            }
 
-        .info-label {
-            color: var(--gold);
-            margin-top: 0.5rem;
-            font-size: 0.9rem;
+            .info-card-content {
+                font-size: 0.95rem;
+                color: var(--light);
+                line-height: 1.8;
+
+                .info-label {
+                    color: var(--gold);
+                    margin-top: 0.5rem;
+                    font-size: 0.9rem;
+                }
+            }
         }
     }
 
@@ -1269,11 +1275,11 @@ img {
         .info-cards-container {
             flex-direction: column;
             align-items: center;
-        }
 
-        .info-card {
-            width: 100%;
-            max-width: 100%;
+            .info-card {
+                width: 100%;
+                max-width: 100%;
+            }
         }
     }
 }
@@ -1290,105 +1296,142 @@ img {
         width: 100%;
         border: 1px solid #222;
         box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
-    }
 
-    .form-title {
-        font-family: 'Playfair Display';
-        font-size: 2.5rem;
-        color: var(--light);
-        text-align: center;
-        margin-bottom: 3rem;
-    }
-
-    .reservation-form {
-        display: flex;
-        flex-direction: column;
-        gap: 1.5rem;
-    }
-
-    .form-row {
-        display: flex;
-        gap: 2rem;
-        flex-wrap: wrap;
-    }
-
-    .form-group {
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-        gap: 0.5rem;
-        min-width: 250px;
-
-        &.full-width {
-            flex: 1 1 100%;
-        }
-    }
-
-    .form-label {
-        font-size: 0.75rem;
-        color: var(--gold);
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        font-weight: 700;
-    }
-
-    .form-input,
-    .form-select,
-    .form-textarea {
-        background-color: var(--input-bg);
-        border: 1px solid var(--input-border);
-        padding: 1rem;
-        color: var(--light);
-        font-family: 'Noah';
-        font-size: 0.9rem;
-        outline: none;
-        transition: border-color 0.3s ease;
-
-        &:focus {
-            border-color: var(--gold);
+        .form-title {
+            font-family: 'Playfair Display';
+            font-size: 2.5rem;
+            color: var(--light);
+            text-align: center;
+            margin-bottom: 3rem;
         }
 
-        &::placeholder {
-            color: #666;
-        }
-    }
+        .reservation-form {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
 
-    .form-textarea {
-        min-height: 120px;
-        resize: vertical;
-    }
+            .form-row {
+                display: flex;
+                gap: 2rem;
+                flex-wrap: wrap;
 
-    .form-submit {
-        display: flex;
-        justify-content: center;
-        margin-top: 1rem;
-    }
+                .form-group {
+                    flex: 1;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 0.5rem;
+                    min-width: 250px;
 
-    .btn-submit {
-        background-color: var(--input-bg);
-        color: var(--light);
-        border: none;
-        padding: 1rem 3rem;
-        font-family: 'Noah';
-        font-weight: 700;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        cursor: pointer;
-        transition: background-color 0.3s ease;
+                    &.full-width {
+                        flex: 1 1 100%;
+                    }
 
-        &:hover {
-            background-color: var(--gold);
+                    .form-label {
+                        font-size: 0.75rem;
+                        color: var(--gold);
+                        text-transform: uppercase;
+                        letter-spacing: 1px;
+                        font-weight: 700;
+                    }
+
+                    .form-input,
+                    .form-select,
+                    .form-textarea {
+                        background-color: var(--input-bg);
+                        border: 1px solid var(--input-border);
+                        padding: 1rem;
+                        color: var(--light);
+                        font-family: 'Noah';
+                        font-size: 0.9rem;
+                        outline: none;
+                        transition: border-color 0.3s ease;
+
+                        &:focus {
+                            border-color: var(--gold);
+                        }
+
+                        &::placeholder {
+                            color: #666;
+                        }
+                    }
+
+                    .form-textarea {
+                        min-height: 120px;
+                        resize: vertical;
+                    }
+                }
+            }
+
+            .form-group.full-width {
+                display: flex;
+                flex-direction: column;
+                gap: 0.5rem;
+
+                .form-label {
+                    font-size: 0.75rem;
+                    color: var(--gold);
+                    text-transform: uppercase;
+                    letter-spacing: 1px;
+                    font-weight: 700;
+                }
+
+                .form-textarea {
+                    background-color: var(--input-bg);
+                    border: 1px solid var(--input-border);
+                    padding: 1rem;
+                    color: var(--light);
+                    font-family: 'Noah';
+                    font-size: 0.9rem;
+                    outline: none;
+                    transition: border-color 0.3s ease;
+                    min-height: 120px;
+                    resize: vertical;
+
+                    &:focus {
+                        border-color: var(--gold);
+                    }
+
+                    &::placeholder {
+                        color: #666;
+                    }
+                }
+            }
+
+            .form-submit {
+                display: flex;
+                justify-content: center;
+                margin-top: 1rem;
+
+                .btn-submit {
+                    background-color: var(--input-bg);
+                    color: var(--light);
+                    border: none;
+                    padding: 1rem 3rem;
+                    font-family: 'Noah';
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    letter-spacing: 1px;
+                    cursor: pointer;
+                    transition: background-color 0.3s ease;
+
+                    &:hover {
+                        background-color: var(--gold);
+                    }
+                }
+            }
         }
     }
 
     @media (max-width: 768px) {
         .form-container {
             padding: 2rem;
-        }
 
-        .form-row {
-            flex-direction: column;
-            gap: 1.5rem;
+            .reservation-form {
+                .form-row {
+                    flex-direction: column;
+                    gap: 1.5rem;
+                }
+            }
         }
     }
 }
